@@ -1,0 +1,57 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #e6f2ff;
+  padding: 20px;
+}
+
+.container {
+  max-width: 700px;
+  margin: auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input, select, button {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+button {
+  background-color: #6c63ff;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.dream-board {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 15px;
+}
+
+.dream-card {
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #fdf6e3;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+.dream-card:hover {
+  transform: scale(1.03);
+}
+
+.dream-card.calm { border-left: 6px solid #7ec8e3; }
+.dream-card.anxious { border-left: 6px solid #ff6f61; }
+.dream-card.joyful { border-left: 6px solid #ffd166; }
+.dream-card.confused { border-left: 6px solid #a29bfe; }
