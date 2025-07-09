@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DreamLog</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🌙 DreamLog</h1>
+    <form id="dreamForm">
+      <label>Mood:</label>
+      <select id="mood">
+        <option value="calm">Calm 😌</option>
+        <option value="anxious">Anxious 😰</option>
+        <option value="joyful">Joyful 😊</option>
+        <option value="confused">Confused 😵</option>
+      </select>
+
+      <label>Theme:</label>
+      <select id="theme">
+        <option value="ocean">Ocean 🌊</option>
+        <option value="flying">Flying 🕊️</option>
+        <option value="falling">Falling 🪂</option>
+        <option value="school">School 🏫</option>
+        <option value="random">Random 🌈</option>
+      </select>
+
+      <label>Summary:</label>
+      <input type="text" id="summary" placeholder="1-sentence dream summary" required />
+
+      <button type="submit">Log Dream</button>
+    </form>
+
+    <div id="dreamBoard" class="dream-board"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
